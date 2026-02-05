@@ -1,0 +1,2 @@
+# Server IP List
+# Format: hostname

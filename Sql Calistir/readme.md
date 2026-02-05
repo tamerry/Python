@@ -17,9 +17,9 @@ Python'ın yüklü olduğundan emin olun.
 
 Gerekli kütüphaneleri yükleyin:
 
-Bash
+```Bash
 pip install pandas pyodbc openpyxl
-ODBC Driver: Bilgisayarınızda SQL Server ODBC sürücüsünün yüklü olması gerekir (Windows'ta standart olarak gelir).
+ODBC Driver: Bilgisayarınızda SQL Server ODBC sürücüsünün yüklü olması gerekir (Windows'ta standart olarak gelir).```
 
 📂 Dosya Yapısı
 Scriptin çalışması için klasör düzeni şu şekilde olmalıdır:
@@ -37,11 +37,12 @@ Tum_Magazalar_Transfer_Durumu.xlsx: (Otomatik oluşur) Birleştirilmiş sonuçla
 ⚙️ Ayarlar
 Kodun içerisindeki şu bölümü kendi veritabanı bilgilerinizle güncellemeyi unutmayın:
 
-Python
+```text
 # Veritabanı Giriş Bilgileri
 DB_USER = 'dbuser'          # Kullanıcı adı     
 DB_PASS = 'dbpass'          # Şifre
 DB_NAME = 'dbname'          # Veritabanı adı 
+```
 📖 Kullanım
 sunucu_ipleri.txt dosyasını oluşturun ve IP'leri alt alta yazın.
 

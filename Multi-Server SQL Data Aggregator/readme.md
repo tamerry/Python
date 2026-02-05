@@ -3,7 +3,7 @@ Bu araç, bir metin dosyasındaki (sunucu_ipleri.txt) tüm SQL Server IP'lerine 
 
 Bağlantı kurulamayan sunucuları otomatik olarak bir hata loguna kaydederek takibini kolaylaştırır.
 
-🚀 Özellikler
+<h3>🚀 Özellikler</h3>
 Toplu İşlem: Onlarca hatta yüzlerce sunucuda aynı anda sorgu çalıştırabilir.
 
 Hata Yönetimi: Bağlantı hatalarını ayıklar ve Hatali_Baglantilar.txt dosyasına yazar.
@@ -12,7 +12,7 @@ Veri Birleştirme: Her sunucudan gelen veriyi birleştirirken, verinin hangi IP'
 
 Otomatik Excel Çıktısı: Sonuçları temiz bir tablo halinde dışa aktarır.
 
-🛠 Kurulum
+<h3>🛠 Kurulum</h3>
 
 Python'ın yüklü olduğundan emin olun.
 
@@ -22,7 +22,7 @@ Gerekli kütüphaneleri yükleyin:
 pip install pandas pyodbc openpyxl
 ODBC Driver: Bilgisayarınızda SQL Server ODBC sürücüsünün yüklü olması gerekir (Windows'ta standart olarak gelir).
 ```
-📂 Dosya Yapısı
+<h3>📂 Dosya Yapısı</h3>
 Scriptin çalışması için klasör düzeni şu şekilde olmalıdır:
 
 SqlCalistir.py: Ana kod dosyası.
@@ -35,7 +35,7 @@ Hatali_Baglantilar.txt: (Otomatik oluşur) Bağlanılamayan IP'ler.
 
 Tum_Magazalar_Transfer_Durumu.xlsx: (Otomatik oluşur) Birleştirilmiş sonuçlar.
 
-⚙️ Ayarlar
+<h3>⚙️ Ayarlar</h3>
 Kodun içerisindeki şu bölümü kendi veritabanı bilgilerinizle güncellemeyi unutmayın:
 
 ```text
@@ -44,7 +44,7 @@ DB_USER = 'dbuser'          # Kullanıcı adı
 DB_PASS = 'dbpass'          # Şifre
 DB_NAME = 'dbname'          # Veritabanı adı 
 ```
-📖 Kullanım
+<h3>📖 Kullanım</h3>
 sunucu_ipleri.txt dosyasını oluşturun ve IP'leri alt alta yazın.
 
 sorgu.sql dosyasına istediğiniz SELECT sorgusunu yazın.
@@ -54,7 +54,7 @@ Terminal veya komut satırından çalıştırın:
 ```python
 python SqlCalistir.py
 ```
-⚠️ Önemli Notlar
+<h3>⚠️ Önemli Notlar</h3>
 Bağlantı zaman aşımı (Timeout) 10 saniye olarak ayarlanmıştır. Yavaş bağlantılarda kodun içinde bu süreyi artırabilirsiniz.
 
 Script, SQL Server kimlik doğrulaması (SQL Auth) kullanmaktadır.

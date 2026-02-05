@@ -59,5 +59,5 @@ Bağlantı zaman aşımı (Timeout) 10 saniye olarak ayarlanmıştır. Yavaş ba
 
 Script, SQL Server kimlik doğrulaması (SQL Auth) kullanmaktadır.
 
-Geliştirme İçin Not
+<h3>Geliştirme İçin Not</h3>
 Eğer bu araca yeni özellikler eklemek isterseniz (örneğin loglama detaylarının artırılması veya farklı DB türleri desteği), lütfen bir Pull Request açın veya Issue üzerinden bildirin.

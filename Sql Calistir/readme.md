@@ -13,14 +13,15 @@ Veri Birleştirme: Her sunucudan gelen veriyi birleştirirken, verinin hangi IP'
 Otomatik Excel Çıktısı: Sonuçları temiz bir tablo halinde dışa aktarır.
 
 🛠 Kurulum
+
 Python'ın yüklü olduğundan emin olun.
 
 Gerekli kütüphaneleri yükleyin:
 
 ```Bash
 pip install pandas pyodbc openpyxl
-ODBC Driver: Bilgisayarınızda SQL Server ODBC sürücüsünün yüklü olması gerekir (Windows'ta standart olarak gelir).```
-
+ODBC Driver: Bilgisayarınızda SQL Server ODBC sürücüsünün yüklü olması gerekir (Windows'ta standart olarak gelir).
+```
 📂 Dosya Yapısı
 Scriptin çalışması için klasör düzeni şu şekilde olmalıdır:
 
@@ -50,8 +51,9 @@ sorgu.sql dosyasına istediğiniz SELECT sorgusunu yazın.
 
 Terminal veya komut satırından çalıştırın:
 
-Bash
+```python
 python SqlCalistir.py
+```
 ⚠️ Önemli Notlar
 Bağlantı zaman aşımı (Timeout) 10 saniye olarak ayarlanmıştır. Yavaş bağlantılarda kodun içinde bu süreyi artırabilirsiniz.
 

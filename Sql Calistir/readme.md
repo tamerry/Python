@@ -1,4 +1,4 @@
-Multi-Server SQL Data Aggregator (SqlCalistir.py)
+<h1>Multi-Server SQL Data Aggregator</h1> (SqlCalistir.py)
 Bu araç, bir metin dosyasındaki (sunucu_ipleri.txt) tüm SQL Server IP'lerine sırayla bağlanır, belirttiğiniz SQL sorgusunu (sorgu.sql) çalıştırır ve dönen tüm sonuçları tek bir Excel dosyasında birleştirir.
 
 Bağlantı kurulamayan sunucuları otomatik olarak bir hata loguna kaydederek takibini kolaylaştırır.

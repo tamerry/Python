@@ -17,19 +17,7 @@ Bu proje, **Türkiye Cumhuriyet Merkez Bankası (TCMB)** tarafından günlük ol
 
 * * *
 
-📐 Proje Mimarisi ve Veri Akışı
--------------------------------
 
-Sistem arka planda çalışan bir veri toplayıcı ve önyüzde hizmet veren bir API sunucusundan oluşur. Veri akış şemasını aşağıda görebilirsiniz:
-
-flowchart TD subgraph Arka Plan Katmanı \[Arka Plan Zamanlayıcı Servisi\] WS\[Windows Servisi  
-TCMB\_Kur\_Servisi / NSSM\] -->|Her Gece 00:05| PyServis\[tcmb\_servis.py\] PyServis -->|HTTP GET / verify=False| TCMB((TCMB XML Servisi)) TCMB -->|Bugünün XML Verisi| PyServis end subgraph Veri Katmanı \[Depolama\] CSV\[(tcmb\_doviz\_kurlari.csv  
-Yol: C:\\TcmbKur\\)\] end PyServis -->|XML'i Ayrıştır &  
-utf-8-sig ile Kaydet| CSV subgraph Sunucu Katmanı \[IIS & Python Flask Web Server\] IIS\[IIS Web Sunucusu  
-Port: 80 / 8080\] -->|wfastcgi.py Köprüsü| Flask\[Flask Uygulaması  
-app.py\] Flask -->|Anlık CSV Dosyasını Okur| CSV end subgraph İstemci Katmanı \[Tüketiciler / Entegrasyon\] User1\[Son Kullanıcı  
-Tarayıcı\] -->|GET /| IIS User2\[Dış Sistemler  
-Muhasebe / Mobil / Web\] -->|GET /api/kurlar| IIS Flask -->|Şık HTML + CSS Arayüzü| User1 Flask -->|Saf JSON Çıktısı| User2 end style CSV fill:#f9f,stroke:#333,stroke-width:2px style TCMB fill:#bbf,stroke:#333,stroke-width:2px style IIS fill:#f96,stroke:#333,stroke-width:2px style Flask fill:#6c6,stroke:#333,stroke-width:1px style WS fill:#fff,stroke:#333,stroke-width:1px
 
 * * *
 
